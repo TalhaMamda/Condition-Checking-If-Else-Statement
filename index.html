@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition checking If Else statement</title>
+</head>
+
+<body>
+    <h1>Condition Checking If Else Statement</h1>
+    <form onsubmit="conditionCheck() ; return false">
+        <label for="temp">Temperature</label>
+        <input type="text" required id="temp">
+        <input type="submit" value="check">
+
+    </form>
+    <p id="result"></p>
+    <script>
+        function conditionCheck() {
+            let temp = +document.querySelector("#temp").value;
+            if (temp > 30) {
+                document.querySelector("#result").innerHTML = "Its too hot.";
+            } else if (temp > 24) {
+                document.querySelector("#result").innerHTML = "Its pleasant outside.";
+            } else if (temp > 20) {
+                document.querySelector("#result").innerHTML = "Its cool outside when You are riding.";
+            } else if (temp > 10) {
+                document.querySelector("#result").innerHTML = "Probably You will need jacket.";
+            } else if (temp > 1) {
+                document.querySelector("#result").innerHTML = "Probably You will need double jacket";
+            } else {
+                document.querySelector("#result").innerHTML = "Its freezing outside";
+            }
+
+        }
+    </script>
+<br><hr>
+    <h3> Boolean Variable</h3>
+    <p>let isEven = true; for example <br>
+        let isOdd = false; for example
+    </p>
+<br><hr>
+    <h3> Temperature App</h3>
+    <p>let temp = +prompt("Enter your temperature"); <br>
+        if (temp > 30)
+        <br>{
+        <br> console.log("its to hot");
+        <br> console.log("don't go outside"); <br>
+        }
+    </p>
+    <p>
+        if (temp < 10) <br>
+            {
+            <br> console.log("its to cold");
+            <br> console.log("don't go outside");
+            <br> }
+    </p>
+    <p>
+        if (30 < temp < 10) <br>
+            <br> {
+            <br> console.log("its a favorable condition");
+            <br> console.log("You can enjoy");
+    </p>
+
+    <script>
+
+        // Boolean variable 
+        let isEven = true; // for example
+        let isOdd = false;   // for example
+
+        //  Temperature App
+        let temp1 = +prompt("Enter your temperature");
+        if (temp1 > 30) {
+            console.log("its to hot");
+            console.log("don't go outside");
+        }
+        if (temp1 < 10) {
+            console.log("its to cold");
+            console.log("don't go outside");
+        }
+        if (30 < temp1 < 10) {
+            console.log("its a favorable condition");
+            console.log("You can enjoy");
+        }
+
+
+    </script>
+</body>
+
+</html>
